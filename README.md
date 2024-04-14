@@ -12,7 +12,7 @@
 
 参考：https://nacos.io/
 
-**我已经制作好了docker镜像，运行命令如下（此docker镜像支持arm64和amd64架构，官方的镜像编译是https://github.com/nacos-group/nacos-docker）** 
+**我已经制作好了docker镜像，运行命令如下（此docker镜像支持arm64和amd64架构，官方的镜像编译是https://github.com/nacos-group/nacos-docker**    ）
 ```shell
 docker run -d --name=nacos-dm \
 -e MODE=standalone \
