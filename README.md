@@ -12,8 +12,15 @@
 
 参考：https://nacos.io/
 
-
-application.properties
+**我已经制作好了docker镜像，运行命令如下（此docker镜像支持arm64和amd64架构，官方的镜像编译是https://github.com/nacos-group/nacos-docker）** 
+```shell
+docker run -d --name=nacos-dm \
+-e MODE=standalone \
+-v /root/application.properties:/home/nacos/conf/application.properties \
+-p 8848:8848 -p 9848:9848 \
+pkyit/nacos:2.3.2-dm8
+```
+启动时的配置文件如下 application.properties
 ```properties
 ### Default web context path:
 server.servlet.contextPath=/nacos
