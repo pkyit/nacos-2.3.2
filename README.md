@@ -90,8 +90,8 @@ nacos.core.auth.enable.userAgentAuthWhite=true
 
 ### Since 1.4.1, worked when nacos.core.auth.enabled=true and nacos.core.auth.enable.userAgentAuthWhite=false.
 ### The two properties is the white list for auth and used by identity the request from other server.
-nacos.core.auth.server.identity.key=
-nacos.core.auth.server.identity.value=
+nacos.core.auth.server.identity.key=nacos
+nacos.core.auth.server.identity.value=nacos
 
 ### worked when nacos.core.auth.system.type=nacos
 ### The token expiration in seconds:
